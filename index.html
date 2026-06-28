@@ -6,10 +6,11 @@
 <title>게임 개발자 허윤 — 포트폴리오</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;900&family=Noto+Serif+KR:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
 <style>
   html,body{margin:0;padding:0;background:#14100D;}
   *{box-sizing:border-box;}
+  *{font-family:'Pretendard',-apple-system,'Segoe UI',sans-serif !important;}
   ::selection{background:#ffef23;color:#14100D;}
   a{color:inherit;text-decoration:none;}
   ::-webkit-scrollbar{width:10px;}
@@ -18,10 +19,13 @@
   @keyframes seamPulse{0%,100%{opacity:.5;}50%{opacity:1;}}
   @keyframes emberBreathe{0%,100%{opacity:.4;}50%{opacity:.75;}}
   @keyframes riseUp{from{opacity:0;transform:translateY(20px);}to{opacity:1;transform:translateY(0);}}
+  .tl-card{transition:border-color .25s ease, box-shadow .25s ease, transform .25s ease;}
+  .tl-card:hover{border-color:rgba(157,78,221,0.6);box-shadow:0 0 24px rgba(123,44,191,0.28);transform:translateY(-2px);}
+  .tl-badge{display:inline-block;background:rgba(0,245,212,0.14);color:#00F5D4;border:1px solid rgba(0,245,212,0.45);border-radius:999px;padding:3px 11px;font-size:12px;font-weight:700;letter-spacing:0.02em;}
 </style>
 </head>
 <body>
-<div style="background:#14100D;color:#ECE5D8;font-family:'Noto Serif KR',serif;min-height:100vh;position:relative;overflow-x:hidden;font-weight:400;">
+<div style="background:#121212;color:#ECE5D8;font-family:'Noto Serif KR',serif;min-height:100vh;position:relative;overflow-x:hidden;font-weight:400;">
 
   <div style="position:fixed;inset:0;pointer-events:none;z-index:2;background:radial-gradient(ellipse 70% 50% at 50% -5%, rgba(255,239,35,0.05), transparent 55%), radial-gradient(ellipse at center, transparent 50%, rgba(0,0,0,0.6) 100%);"></div>
 
@@ -44,7 +48,9 @@
 
         <h1 style="font-family:'Noto Serif KR',serif;font-weight:900;font-size:42px;letter-spacing:0.12em;margin:26px 0 6px;color:#ECE5D8;line-height:1;">허윤</h1>
         <div style="font-family:'Noto Serif KR',serif;font-weight:500;font-size:15px;letter-spacing:0.04em;color:#7BA39C;">게임 개발자</div>
-        <p style="margin:18px 0 0;font-size:15px;color:rgba(236,229,216,0.72);line-height:1.75;">안녕하세요! 대학생 인디게임 개발자 허윤입니다!</p>
+        <p style="margin:18px 0 0;font-size:15px;color:rgba(236,229,216,0.72);line-height:1.75;">
+          안녕하세요!<br>
+          대학생 인디게임 개발자 허윤입니다!</p>
 
         <div style="display:flex;align-items:center;gap:12px;margin:26px 0;">
           <div style="height:1px;flex:1;background:rgba(123,163,156,0.25);"></div>
@@ -53,21 +59,33 @@
         </div>
 
         <div style="display:flex;flex-direction:column;gap:20px;">
-          <a href="mailto:heoyun@email.com" style="display:block;">
-            <div style="font-family:'Cinzel',serif;font-size:10px;letter-spacing:0.26em;text-transform:uppercase;color:#7BA39C;margin-bottom:4px;">Mail</div>
-            <div style="font-size:15px;color:#ECE5D8;">heoyun@email.com</div>
+          <a href="mailto:yoony4175@gmail.com" style="display:flex;align-items:center;gap:14px;">
+            <img src="assets/Gmail_icon_(2020).svg.png" alt="" style="width:32px;height:32px;object-fit:contain;flex:none;">
+            <div style="min-width:0;">
+              <div style="font-family:'Cinzel',serif;font-size:10px;letter-spacing:0.26em;text-transform:uppercase;color:#7BA39C;margin-bottom:4px;">Mail</div>
+              <div style="font-size:15px;color:#ECE5D8;overflow-wrap:anywhere;">yoony4175@gmail.com</div>
+            </div>
           </a>
-          <div>
-            <div style="font-family:'Cinzel',serif;font-size:10px;letter-spacing:0.26em;text-transform:uppercase;color:#7BA39C;margin-bottom:4px;">Phone</div>
-            <div style="font-size:15px;color:#ECE5D8;">010-0000-0000</div>
+          <div style="display:flex;align-items:center;gap:14px;">
+            <img src="assets/accept-call-icon.svg" alt="" style="width:32px;height:32px;object-fit:contain;flex:none;">
+            <div style="min-width:0;">
+              <div style="font-family:'Cinzel',serif;font-size:10px;letter-spacing:0.26em;text-transform:uppercase;color:#7BA39C;margin-bottom:4px;">Phone</div>
+              <div style="font-size:15px;color:#ECE5D8;overflow-wrap:anywhere;">010-5547-4175</div>
+            </div>
           </div>
-          <a href="https://linkedin.com/in/heoyun" target="_blank" rel="noopener" style="display:block;">
-            <div style="font-family:'Cinzel',serif;font-size:10px;letter-spacing:0.26em;text-transform:uppercase;color:#7BA39C;margin-bottom:4px;">LinkedIn</div>
-            <div style="font-size:15px;color:#ECE5D8;">linkedin.com/in/heoyun</div>
+          <a href="https://www.linkedin.com/in/yoon030506/" target="_blank" rel="noopener" style="display:flex;align-items:center;gap:14px;">
+            <img src="assets/LinkedIn_icon.svg.png" alt="" style="width:32px;height:32px;object-fit:contain;flex:none;">
+            <div style="min-width:0;">
+              <div style="font-family:'Cinzel',serif;font-size:10px;letter-spacing:0.26em;text-transform:uppercase;color:#7BA39C;margin-bottom:4px;">LinkedIn</div>
+              <div style="font-size:15px;color:#ECE5D8;overflow-wrap:anywhere;">https://www.linkedin.com/in/yoon030506/</div>
+            </div>
           </a>
-          <a href="https://github.com/heoyun" target="_blank" rel="noopener" style="display:block;">
-            <div style="font-family:'Cinzel',serif;font-size:10px;letter-spacing:0.26em;text-transform:uppercase;color:#7BA39C;margin-bottom:4px;">GitHub</div>
-            <div style="font-size:15px;color:#ECE5D8;">github.com/heoyun</div>
+          <a href="https://github.com/CultistYoon" target="_blank" rel="noopener" style="display:flex;align-items:center;gap:14px;">
+            <img src="assets/github-icon.png" alt="" style="width:32px;height:32px;object-fit:contain;flex:none;">
+            <div style="min-width:0;">
+              <div style="font-family:'Cinzel',serif;font-size:10px;letter-spacing:0.26em;text-transform:uppercase;color:#7BA39C;margin-bottom:4px;">GitHub</div>
+              <div style="font-size:15px;color:#ECE5D8;overflow-wrap:anywhere;">https://github.com/CultistYoon</div>
+            </div>
           </a>
         </div>
       </aside>
@@ -76,84 +94,177 @@
 
         <section style="margin-bottom:128px;">
           <div style="display:flex;align-items:center;gap:14px;font-family:'Cinzel',serif;font-size:12px;letter-spacing:0.34em;text-transform:uppercase;color:#7BA39C;">
-            <span style="color:#ECE5D8;">대표작</span>
-            <span style="width:24px;height:1px;background:#7BA39C;display:inline-block;"></span>
-            <span>Signature Work</span>
+            <span>Signature Project</span>
           </div>
 
-          <h2 style="font-family:'Cinzel',serif;font-weight:900;font-size:clamp(54px,7vw,98px);letter-spacing:0.04em;line-height:0.98;margin:18px 0 0;color:#ECE5D8;">PORTAL <span style="color:#ffef23;text-shadow:0 0 28px rgba(255,239,35,0.45);">SWORD</span></h2>
+          <h2 style="font-family:'Cinzel',serif;font-weight:900;font-size:clamp(54px,7vw,98px);letter-spacing:0.04em;line-height:0.98;margin:18px 0 0;color:#7477D8;white-space:nowrap;">PORTAL <span style="color:#2FE1FF;text-shadow:0 0 28px rgba(255,239,35,0.45);">SWORD</span></h2>
 
-          <p style="margin:22px 0 0;font-size:22px;font-weight:700;color:rgba(236,229,216,0.9);letter-spacing:0.02em;">검으로 공간을 가르는 액션.</p>
+          <p style="margin:22px 0 0;font-size:22px;font-weight:700;color:rgba(236,229,216,0.9);letter-spacing:0.02em;">검으로 공간을 가르는 액션 게임</p>
 
           <div style="position:relative;margin-top:44px;aspect-ratio:16/9;border:1px solid rgba(123,163,156,0.28);background:#0E0B08;overflow:hidden;">
-            <div style="position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:18px;background:radial-gradient(ellipse 55% 100% at 50% 50%, rgba(255,239,35,0.08), #0E0B08 65%);">
-              <div style="width:72px;height:72px;border:1px solid rgba(123,163,156,0.5);border-radius:50%;display:flex;align-items:center;justify-content:center;">
-                <div style="width:0;height:0;border-top:12px solid transparent;border-bottom:12px solid transparent;border-left:20px solid rgba(255,239,35,0.85);margin-left:5px;"></div>
-              </div>
-              <div style="font-size:16px;color:rgba(236,229,216,0.72);">플레이 영상이 들어갈 자리</div>
-              <div style="font-family:'Courier New',monospace;font-size:11px;letter-spacing:0.18em;color:rgba(123,163,156,0.85);">// GAMEPLAY VIDEO</div>
-            </div>
+            <video src="assets/PotalSward.mp4" controls playsinline style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;"></video>
           </div>
 
           <div style="display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid rgba(123,163,156,0.22);margin-top:32px;">
             <div style="padding:22px 0;">
-              <div style="font-family:'Cinzel',serif;font-size:10px;letter-spacing:0.24em;text-transform:uppercase;color:#7BA39C;margin-bottom:8px;">역할 · Role</div>
+              <div style="font-family:'Cinzel',serif;font-size:10px;letter-spacing:0.24em;text-transform:uppercase;color:#7BA39C;margin-bottom:8px;">Role</div>
               <div style="font-size:17px;color:#ECE5D8;">Project Manager</div>
             </div>
             <div style="padding:22px 0 22px 28px;border-left:1px solid rgba(123,163,156,0.22);">
-              <div style="font-family:'Cinzel',serif;font-size:10px;letter-spacing:0.24em;text-transform:uppercase;color:#7BA39C;margin-bottom:8px;">스튜디오 · Studio</div>
-              <div style="font-size:17px;color:#ECE5D8;">달기 스튜디오</div>
+              <div style="font-family:'Cinzel',serif;font-size:10px;letter-spacing:0.24em;text-transform:uppercase;color:#7BA39C;margin-bottom:8px;">Studio</div>
+              <div style="font-size:17px;color:#ECE5D8;">Dalgi Studio</div>
             </div>
             <div style="padding:22px 0 22px 28px;border-left:1px solid rgba(123,163,156,0.22);">
-              <div style="font-family:'Cinzel',serif;font-size:10px;letter-spacing:0.24em;text-transform:uppercase;color:#7BA39C;margin-bottom:8px;">성과 · Outcome</div>
-              <div style="font-size:17px;color:#ECE5D8;">데모 릴리즈까지 견인</div>
+              <div style="font-family:'Cinzel',serif;font-size:10px;letter-spacing:0.24em;text-transform:uppercase;color:#7BA39C;margin-bottom:8px;">Outcome</div>
+              <div style="font-size:17px;color:#ECE5D8;">Project Management</div>
             </div>
           </div>
 
-          <p style="margin:34px 0 0;max-width:62ch;font-size:17px;line-height:1.95;color:rgba(236,229,216,0.78);">'Portal Sword'는 검으로 공간 그 자체를 베어 포탈을 여는 액션 게임입니다. 저는 프로젝트 매니저로서 기획과 일정, 팀을 총괄하며 프로젝트를 데모 릴리즈까지 이끌었습니다.</p>
+          <p style="margin:34px 0 0;max-width:62ch;font-size:17px;line-height:1.95;color:rgba(236,229,216,0.78);">'Portal Sword'는 검으로 순간이동하는 액션 게임입니다. 저는 디렉터와 '주고 싶은 경험'을 지속적으로 다듬고 각 인원의 일을 명확히 구분 짓고 전달하였고, 개발 리드와 코드 규범을 세워 그 기준으로 코드를 리뷰하며 방향을 잡았습니다. 또 구현된 기능이 어떻게 작동하고 연결되는지 디렉터에게 전달해 그가 게임을 쥐고 끌어갈 수 있게 했습니다.</p>
         </section>
 
-        <section style="margin-bottom:128px;">
-          <div style="display:flex;align-items:center;gap:14px;font-family:'Cinzel',serif;font-size:12px;letter-spacing:0.34em;text-transform:uppercase;color:#7BA39C;">
-            <span style="color:#ECE5D8;">경력</span>
-            <span style="width:24px;height:1px;background:#7BA39C;display:inline-block;"></span>
-            <span>Career</span>
+      </main>
+    </div>
+
+    <section style="margin-bottom:128px;">
+      <h2 style="font-weight:900;font-size:clamp(34px,4vw,48px);letter-spacing:0.02em;text-align:center;margin:0 0 56px;color:#ECE5D8;">My Experience</h2>
+
+      <div style="position:relative;max-width:920px;margin:0 auto;">
+        <div style="position:absolute;left:25px;top:26px;bottom:26px;width:2px;background:rgba(255,255,255,0.16);"></div>
+
+        <div style="position:relative;display:flex;gap:24px;align-items:flex-start;margin-bottom:32px;">
+          <div style="flex:none;width:52px;height:52px;border-radius:50%;border:2px solid rgba(0,245,212,0.5);background:#121212;display:flex;align-items:center;justify-content:center;z-index:1;box-shadow:0 0 14px rgba(0,245,212,0.18);">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#00F5D4" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
           </div>
-          <h2 style="font-family:'Noto Serif KR',serif;font-weight:900;font-size:44px;letter-spacing:0.04em;margin:16px 0 4px;color:#ECE5D8;">경력 기술서</h2>
-          <div style="width:48px;height:2px;background:#ffef23;box-shadow:0 0 12px rgba(255,239,35,0.5);margin:14px 0 48px;"></div>
-
-          <div style="position:relative;padding-left:32px;border-left:1px solid rgba(123,163,156,0.3);">
-
-            <div style="position:relative;margin-bottom:46px;">
-              <div style="position:absolute;left:-38px;top:8px;width:8px;height:8px;background:#ffef23;transform:rotate(45deg);box-shadow:0 0 10px rgba(255,239,35,0.7);"></div>
-              <div style="font-family:'Noto Serif KR',serif;font-weight:700;font-size:21px;color:#ECE5D8;">렘노 스튜디오</div>
-              <div style="font-family:'Cinzel',serif;font-size:12px;letter-spacing:0.18em;text-transform:uppercase;color:#7BA39C;margin:6px 0 10px;">게임 기획 · GDD 설계</div>
-              <p style="margin:0;max-width:58ch;font-size:15px;line-height:1.85;color:rgba(236,229,216,0.72);">게임의 핵심 시스템을 기획하고 게임 디자인 문서(GDD)를 설계하며 제작의 토대를 다졌습니다.</p>
-            </div>
-
-            <div style="position:relative;margin-bottom:46px;">
-              <div style="position:absolute;left:-37px;top:9px;width:6px;height:6px;background:#7BA39C;transform:rotate(45deg);"></div>
-              <div style="font-family:'Noto Serif KR',serif;font-weight:700;font-size:21px;color:#ECE5D8;">메이플스토리 아카데미 1기</div>
-              <div style="font-family:'Cinzel',serif;font-size:12px;letter-spacing:0.18em;text-transform:uppercase;color:#7BA39C;margin:6px 0 10px;">Lua 스크립팅</div>
-              <p style="margin:0;max-width:58ch;font-size:15px;line-height:1.85;color:rgba(236,229,216,0.72);">Lua 스크립트로 인게임 콘텐츠를 구현하며 라이브 게임 제작의 실무를 익혔습니다.</p>
-            </div>
-
-            <div style="position:relative;margin-bottom:46px;">
-              <div style="position:absolute;left:-37px;top:9px;width:6px;height:6px;background:#7BA39C;transform:rotate(45deg);"></div>
-              <div style="font-family:'Noto Serif KR',serif;font-weight:700;font-size:21px;color:#ECE5D8;">Stove Crew 2기</div>
-              <div style="font-family:'Cinzel',serif;font-size:12px;letter-spacing:0.18em;text-transform:uppercase;color:#7BA39C;margin:6px 0 10px;">팀장 · Team Lead</div>
-              <p style="margin:0;max-width:58ch;font-size:15px;line-height:1.85;color:rgba(236,229,216,0.72);">팀을 이끌며 프로젝트의 방향을 조율하고 결과물을 완성까지 책임졌습니다.</p>
-            </div>
-
-            <div style="position:relative;">
-              <div style="position:absolute;left:-37px;top:9px;width:6px;height:6px;background:#7BA39C;transform:rotate(45deg);"></div>
-              <div style="font-family:'Noto Serif KR',serif;font-weight:700;font-size:21px;color:#ECE5D8;">컨퍼런스 기획</div>
-              <div style="font-family:'Cinzel',serif;font-size:12px;letter-spacing:0.18em;text-transform:uppercase;color:#7BA39C;margin:6px 0 10px;">기획 · 운영</div>
-              <p style="margin:0;max-width:58ch;font-size:15px;line-height:1.85;color:rgba(236,229,216,0.72);">게임 분야 컨퍼런스를 직접 기획하고 운영하며 사람과 일정을 아울렀습니다.</p>
-            </div>
-
+          <div class="tl-card" style="flex:1;position:relative;background:rgba(255,255,255,0.035);border:1px solid rgba(255,255,255,0.07);border-radius:10px;padding:20px 26px;">
+            <div style="position:absolute;left:-7px;top:22px;width:0;height:0;border-top:7px solid transparent;border-bottom:7px solid transparent;border-right:7px solid rgba(255,255,255,0.07);"></div>
+            <div style="font-size:12px;font-weight:700;letter-spacing:0.04em;color:#00F5D4;margin-bottom:6px;">2024.02</div>
+            <div style="font-weight:700;font-size:18px;color:#ECE5D8;">게임 개발자와의 첫 만남</div>
+            <div style="font-weight:700;font-size:13px;color:#7FB9D6;margin-top:3px;letter-spacing:0.02em;">First Encounter</div>
+            <p style="margin:12px 0 0;font-size:14.5px;line-height:1.7;color:rgba(236,229,216,0.72);">처음으로 게임 개발자들이 모이는 자리에 나갔다. 게임 개발이라는 세계에 처음으로 발을 내디뎠다.</p>
           </div>
-        </section>
+        </div>
+
+        <div style="position:relative;display:flex;gap:24px;align-items:flex-start;margin-bottom:32px;">
+          <div style="flex:none;width:52px;height:52px;border-radius:50%;border:2px solid rgba(0,245,212,0.5);background:#121212;display:flex;align-items:center;justify-content:center;z-index:1;box-shadow:0 0 14px rgba(0,245,212,0.18);">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#00F5D4" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"/><path d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"/><path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0"/><path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"/></svg>
+          </div>
+          <div class="tl-card" style="flex:1;position:relative;background:rgba(255,255,255,0.035);border:1px solid rgba(255,255,255,0.07);border-radius:10px;padding:20px 26px;">
+            <div style="position:absolute;left:-7px;top:22px;width:0;height:0;border-top:7px solid transparent;border-bottom:7px solid transparent;border-right:7px solid rgba(255,255,255,0.07);"></div>
+            <div style="font-size:12px;font-weight:700;letter-spacing:0.04em;color:#00F5D4;margin-bottom:6px;">2024.05</div>
+            <div style="font-weight:700;font-size:18px;color:#ECE5D8;">첫 프로젝트 "Anqet"</div>
+            <div style="font-weight:700;font-size:13px;color:#7FB9D6;margin-top:3px;letter-spacing:0.02em;">First Project</div>
+            <p style="margin:12px 0 0;font-size:14.5px;line-height:1.7;color:rgba(236,229,216,0.72);">아는 것 하나 없이, 주변의 학생 프로그래머와 아티스트에게 직접 연락해 게임을 만들기 시작했다. "어떻게든 되겠지"라는 마음으로 ChatGPT에 기대 달렸지만, 9월에 끝내 무산됐다. 첫 실패였고, 첫 배움이었다.</p>
+          </div>
+        </div>
+
+        <div style="position:relative;display:flex;gap:24px;align-items:flex-start;margin-bottom:32px;">
+          <div style="flex:none;width:52px;height:52px;border-radius:50%;border:2px solid rgba(0,245,212,0.5);background:#121212;display:flex;align-items:center;justify-content:center;z-index:1;box-shadow:0 0 14px rgba(0,245,212,0.18);">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#00F5D4" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+          </div>
+          <div class="tl-card" style="flex:1;position:relative;background:rgba(255,255,255,0.035);border:1px solid rgba(255,255,255,0.07);border-radius:10px;padding:20px 26px;">
+            <div style="position:absolute;left:-7px;top:22px;width:0;height:0;border-top:7px solid transparent;border-bottom:7px solid transparent;border-right:7px solid rgba(255,255,255,0.07);"></div>
+            <div style="font-size:12px;font-weight:700;letter-spacing:0.04em;color:#00F5D4;margin-bottom:6px;">2024.07</div>
+            <div style="font-weight:700;font-size:18px;color:#ECE5D8;">PCC 노비스 게임 메이커 클럽</div>
+            <div style="font-weight:700;font-size:13px;color:#7FB9D6;margin-top:3px;letter-spacing:0.02em;">Game Maker Club</div>
+            <p style="margin:12px 0 0;font-size:14.5px;line-height:1.7;color:rgba(236,229,216,0.72);">12월까지 클럽에서 게임을 개발했다. 마이즈님의 친절한 가르침 덕에 가장 많이 배운 시기. 골드메탈님의 「언데드 서바이버」를 따라 만들며, 처음으로 게임 하나를 끝까지 완성해냈다.</p>
+          </div>
+        </div>
+
+        <div style="position:relative;display:flex;gap:24px;align-items:flex-start;margin-bottom:32px;">
+          <div style="flex:none;width:52px;height:52px;border-radius:50%;border:2px solid rgba(0,245,212,0.5);background:#121212;display:flex;align-items:center;justify-content:center;z-index:1;box-shadow:0 0 14px rgba(0,245,212,0.18);">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#00F5D4" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 22v-4a2 2 0 1 0-4 0v4"/><path d="m18 10 4 2v8a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2v-8l4-2"/><path d="M18 5v17"/><path d="m4 6 8-4 8 4"/><path d="M6 5v17"/><circle cx="12" cy="9" r="2"/></svg>
+          </div>
+          <div class="tl-card" style="flex:1;position:relative;background:rgba(255,255,255,0.035);border:1px solid rgba(255,255,255,0.07);border-radius:10px;padding:20px 26px;">
+            <div style="position:absolute;left:-7px;top:22px;width:0;height:0;border-top:7px solid transparent;border-bottom:7px solid transparent;border-right:7px solid rgba(255,255,255,0.07);"></div>
+            <div style="font-size:12px;font-weight:700;letter-spacing:0.04em;color:#00F5D4;margin-bottom:6px;">2025.03</div>
+            <div style="font-weight:700;font-size:18px;color:#ECE5D8;">대학 입학, 개발 동아리 "BABARIAN"</div>
+            <div style="font-weight:700;font-size:13px;color:#7FB9D6;margin-top:3px;letter-spacing:0.02em;">University &amp; Club</div>
+            <p style="margin:12px 0 0;font-size:14.5px;line-height:1.7;color:rgba(236,229,216,0.72);">대학교에 입학하며 게임 개발 동아리에 들어갔다. 프로젝트 BABARIAN에 기획/PM으로 합류해, 12월 데모 완성을 목표로 달렸다.</p>
+          </div>
+        </div>
+
+        <div style="position:relative;display:flex;gap:24px;align-items:flex-start;margin-bottom:32px;">
+          <div style="flex:none;width:52px;height:52px;border-radius:50%;border:2px solid rgba(0,245,212,0.5);background:#121212;display:flex;align-items:center;justify-content:center;z-index:1;box-shadow:0 0 14px rgba(0,245,212,0.18);">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#00F5D4" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/><line x1="12" x2="12" y1="19" y2="22"/></svg>
+          </div>
+          <div class="tl-card" style="flex:1;position:relative;background:rgba(255,255,255,0.035);border:1px solid rgba(255,255,255,0.07);border-radius:10px;padding:20px 26px;">
+            <div style="position:absolute;left:-7px;top:22px;width:0;height:0;border-top:7px solid transparent;border-bottom:7px solid transparent;border-right:7px solid rgba(255,255,255,0.07);"></div>
+            <div style="font-size:12px;font-weight:700;letter-spacing:0.04em;color:#00F5D4;margin-bottom:6px;">2025.04</div>
+            <div style="font-weight:700;font-size:18px;color:#ECE5D8;">JCJS 웨루 컨퍼런스 책임자</div>
+            <div style="font-weight:700;font-size:13px;color:#7FB9D6;margin-top:3px;letter-spacing:0.02em;">Conference Lead</div>
+            <p style="margin:12px 0 0;font-size:14.5px;line-height:1.7;color:rgba(236,229,216,0.72);">활동하던 JCJS 웨루 커뮤니티에서 컨퍼런스 책임자를 맡았다. 8월, 행사를 성공적으로 주최했다.</p>
+            <a href="#" target="_blank" rel="noopener" style="display:inline-block;margin-top:10px;font-size:13px;font-weight:700;color:#00F5D4;">↳ Instagram 기록</a>
+          </div>
+        </div>
+
+        <div style="position:relative;display:flex;gap:24px;align-items:flex-start;margin-bottom:32px;">
+          <div style="flex:none;width:52px;height:52px;border-radius:50%;border:2px solid rgba(0,245,212,0.5);background:#121212;display:flex;align-items:center;justify-content:center;z-index:1;box-shadow:0 0 14px rgba(0,245,212,0.18);">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#00F5D4" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m22 8-6 4 6 4V8Z"/><rect width="14" height="12" x="2" y="6" rx="2" ry="2"/></svg>
+          </div>
+          <div class="tl-card" style="flex:1;position:relative;background:rgba(255,255,255,0.035);border:1px solid rgba(255,255,255,0.07);border-radius:10px;padding:20px 26px;">
+            <div style="position:absolute;left:-7px;top:22px;width:0;height:0;border-top:7px solid transparent;border-bottom:7px solid transparent;border-right:7px solid rgba(255,255,255,0.07);"></div>
+            <div style="font-size:12px;font-weight:700;letter-spacing:0.04em;color:#00F5D4;margin-bottom:6px;">2025.09</div>
+            <div style="font-weight:700;font-size:18px;color:#ECE5D8;">스토브 크루 2기</div>
+            <div style="font-weight:700;font-size:13px;color:#7FB9D6;margin-top:3px;letter-spacing:0.02em;">Stove Crew</div>
+            <p style="margin:12px 0 0;font-size:14.5px;line-height:1.7;color:rgba(236,229,216,0.72);">스토브 크루 2기에 합격. 12월까지 게임 리뷰어로 활동하며 지스타 등 현장을 다니고, 스토브의 게임을 플레이·리뷰해 유튜브에 영상을 올렸다.</p>
+          </div>
+        </div>
+
+        <div style="position:relative;display:flex;gap:24px;align-items:flex-start;margin-bottom:32px;">
+          <div style="flex:none;width:52px;height:52px;border-radius:50%;border:2px solid rgba(0,245,212,0.5);background:#121212;display:flex;align-items:center;justify-content:center;z-index:1;box-shadow:0 0 14px rgba(0,245,212,0.18);">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#00F5D4" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M16 20V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/><rect width="20" height="14" x="2" y="6" rx="2"/></svg>
+          </div>
+          <div class="tl-card" style="flex:1;position:relative;background:rgba(255,255,255,0.035);border:1px solid rgba(255,255,255,0.07);border-radius:10px;padding:20px 26px;">
+            <div style="position:absolute;left:-7px;top:22px;width:0;height:0;border-top:7px solid transparent;border-bottom:7px solid transparent;border-right:7px solid rgba(255,255,255,0.07);"></div>
+            <div style="font-size:12px;font-weight:700;letter-spacing:0.04em;color:#00F5D4;margin-bottom:6px;">2025.12</div>
+            <div style="font-weight:700;font-size:18px;color:#ECE5D8;">"포탈 스워드" PM 합류</div>
+            <div style="font-weight:700;font-size:13px;color:#7FB9D6;margin-top:3px;letter-spacing:0.02em;">Portal Sword</div>
+            <p style="margin:12px 0 0;font-size:14.5px;line-height:1.7;color:rgba(236,229,216,0.72);">행사 매니저 경력과 6명을 넘긴 개발 규모를 바탕으로 PM으로 합류했다. 2026년 2월까지 팀을 이끌어 데모 버전을 커뮤니티에 배포했다.</p>
+          </div>
+        </div>
+
+        <div style="position:relative;display:flex;gap:24px;align-items:flex-start;margin-bottom:32px;">
+          <div style="flex:none;width:52px;height:52px;border-radius:50%;border:2px solid rgba(0,245,212,0.5);background:#121212;display:flex;align-items:center;justify-content:center;z-index:1;box-shadow:0 0 14px rgba(0,245,212,0.18);">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#00F5D4" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/><path d="M12 5 9.04 7.96a2.17 2.17 0 0 0 0 3.08c.82.82 2.13.85 3 .07l2.07-1.9a2.82 2.82 0 0 1 3.79 0l2.96 2.66"/><path d="m18 15-2-2"/><path d="m15 18-2-2"/></svg>
+          </div>
+          <div class="tl-card" style="flex:1;position:relative;background:rgba(255,255,255,0.035);border:1px solid rgba(255,255,255,0.07);border-radius:10px;padding:20px 26px;">
+            <div style="position:absolute;left:-7px;top:22px;width:0;height:0;border-top:7px solid transparent;border-bottom:7px solid transparent;border-right:7px solid rgba(255,255,255,0.07);"></div>
+            <div style="font-size:12px;font-weight:700;letter-spacing:0.04em;color:#00F5D4;margin-bottom:6px;">2026.03</div>
+            <div style="font-weight:700;font-size:18px;color:#ECE5D8;">"단애(Danae)" 기획/PM</div>
+            <div style="font-weight:700;font-size:13px;color:#7FB9D6;margin-top:3px;letter-spacing:0.02em;">Danae</div>
+            <p style="margin:12px 0 0;font-size:14.5px;line-height:1.7;color:rgba(236,229,216,0.72);">기획/PM으로 합류해 개발을 이어갔지만, 팀원들의 개인 사정으로 프로젝트는 무산됐다. 가장 어려웠던 건 팀 내 갈등이었고, 나는 모두의 말을 듣고 상담하고 설득하는 데 온 힘을 쏟았다.</p>
+          </div>
+        </div>
+
+        <div style="position:relative;display:flex;gap:24px;align-items:flex-start;margin-bottom:32px;">
+          <div style="flex:none;width:52px;height:52px;border-radius:50%;border:2px solid rgba(0,245,212,0.5);background:#121212;display:flex;align-items:center;justify-content:center;z-index:1;box-shadow:0 0 14px rgba(0,245,212,0.18);">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#00F5D4" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polyline points="14.5 17.5 3 6 3 3 6 3 17.5 14.5"/><line x1="13" x2="19" y1="19" y2="13"/><line x1="16" x2="20" y1="16" y2="20"/><line x1="19" x2="21" y1="21" y2="19"/><polyline points="14.5 6.5 18 3 21 3 21 6 17.5 9.5"/><line x1="5" x2="9" y1="14" y2="18"/><line x1="7" x2="4" y1="17" y2="20"/><line x1="3" x2="5" y1="19" y2="21"/></svg>
+          </div>
+          <div class="tl-card" style="flex:1;position:relative;background:rgba(255,255,255,0.035);border:1px solid rgba(255,255,255,0.07);border-radius:10px;padding:20px 26px;">
+            <div style="position:absolute;left:-7px;top:22px;width:0;height:0;border-top:7px solid transparent;border-bottom:7px solid transparent;border-right:7px solid rgba(255,255,255,0.07);"></div>
+            <div style="display:flex;align-items:center;gap:8px;margin-bottom:6px;"><span style="font-size:12px;font-weight:700;letter-spacing:0.04em;color:#00F5D4;">2026.06</span><span class="tl-badge">진행 중</span></div>
+            <div style="font-weight:700;font-size:18px;color:#ECE5D8;">"Fair Duel" 기획/PM/아트</div>
+            <div style="font-weight:700;font-size:13px;color:#7FB9D6;margin-top:3px;letter-spacing:0.02em;">Fair Duel</div>
+            <p style="margin:12px 0 0;font-size:14.5px;line-height:1.7;color:rgba(236,229,216,0.72);">1.44MB GAME CONTEST 출품작. 단애에서 함께했던 개발자와 다시 뭉쳐 기획·PM·아트를 맡아 만들고 있다.</p>
+          </div>
+        </div>
+
+        <div style="position:relative;display:flex;gap:24px;align-items:flex-start;">
+          <div style="flex:none;width:52px;height:52px;border-radius:50%;border:2px solid rgba(0,245,212,0.5);background:#121212;display:flex;align-items:center;justify-content:center;z-index:1;box-shadow:0 0 14px rgba(0,245,212,0.18);">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#00F5D4" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"/></svg>
+          </div>
+          <div class="tl-card" style="flex:1;position:relative;background:rgba(255,255,255,0.035);border:1px solid rgba(255,255,255,0.07);border-radius:10px;padding:20px 26px;">
+            <div style="position:absolute;left:-7px;top:22px;width:0;height:0;border-top:7px solid transparent;border-bottom:7px solid transparent;border-right:7px solid rgba(255,255,255,0.07);"></div>
+            <div style="display:flex;align-items:center;gap:8px;margin-bottom:6px;"><span style="font-size:12px;font-weight:700;letter-spacing:0.04em;color:#00F5D4;">2026.06</span><span class="tl-badge">진행 중</span></div>
+            <div style="font-weight:700;font-size:18px;color:#ECE5D8;">"켓테이커(가제)" · 메이플 아카데미 1기</div>
+            <div style="font-weight:700;font-size:13px;color:#7FB9D6;margin-top:3px;letter-spacing:0.02em;">Cat-taker</div>
+            <p style="margin:12px 0 0;font-size:14.5px;line-height:1.7;color:rgba(236,229,216,0.72);">메이플 아카데미 1기에 합격해 디렉터·아트로 참여 중. 플랫포머 슈팅 게임을 개발하고 있다.</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
 
         <section style="margin-bottom:40px;">
           <div style="display:flex;align-items:center;gap:14px;font-family:'Cinzel',serif;font-size:12px;letter-spacing:0.34em;text-transform:uppercase;color:#7BA39C;">
@@ -172,12 +283,9 @@
           </div>
         </section>
 
-      </main>
-    </div>
-
     <footer style="display:flex;justify-content:space-between;align-items:center;border-top:1px solid rgba(123,163,156,0.18);margin-top:80px;padding:34px 0;font-family:'Cinzel',serif;font-size:11px;letter-spacing:0.28em;text-transform:uppercase;color:rgba(123,163,156,0.7);">
       <span>&copy; MMXXVI Heo Yun</span>
-      <span style="color:rgba(236,229,216,0.5);">검으로 공간을 가른다</span>
+      <span style="color:rgba(236,229,216,0.5);">히히 게임조아</span>
     </footer>
 
   </div>
